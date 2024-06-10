@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Comments Interaction Demo</title>
+</head>
+<body>
+   <header>
+    <div class="header-content">
+        <div class="logo">
+            <!-- logo here -->
+            <img src="img/logo.svg" alt="Logo">
+        </div>
+        <div class="logout-button">
+            Log in
+        </div>
+    </div>
+   </header>
+
+<main>
+    <div class="container">
+        <div class="title">
+            <div class="flex-container">
+                <div class="title-content">
+                    <h1 class="heading">Design Ai Recap Launch Standup</h1>
+                    <h2 class="subheading">December 20, 2023 9:00 – 10:02 AM (62min)</h2>
+                </div>
+                <div class="more-icon">
+                    <img src="img/more.svg" alt="More Icon">
+                </div>
+            </div>
+        </div> <!-- title -->
+    
+
+    <div class="content-blocks">
+        
+    
+    <div class="meeting-transcript">
+        
+        <div class="transcript-item">
+            <div class="speaker-image">
+                <img src="img/user2.png" alt="Person 2">
+            </div>
+            
+            <div class ="transcript-raw">
+                <div class="speaker-info">
+                    <div class="speaker">Mark Johnson</div>
+                    <div class="time">00:20</div>
+                </div>
+                <div class="text">Good morning, everyone. Let's kick off our daily stand-up meeting. Marcus, could you start by updating us on your progress from yesterday?
+                </div>
+            </div>
+        </div>
+
+        <div class="transcript-item">
+            <div class="speaker-image">
+                <img src="img/user3.png" alt="Person 3">
+            </div>
+            
+            <div class ="transcript-raw">
+                <div class="speaker-info">
+                    <div class="speaker">Jane Doe</div>
+                    <div class="time">00:30</div>
+                </div>
+                <div class="text">I just want to take a moment to express my genuine appreciation for the effort and creativity put into these designs. It's evident that a lot of thought and dedication went into crafting them, and I truly believe they reflect the high standards we strive for as a team.
+                </div>
+            </div>
+        </div>
+
+        <div class="transcript-item">
+            <div class="speaker-image">
+                <img src="img/user3.png" alt="Person 3">
+            </div>
+            
+            <div class ="transcript-raw">
+                <div class="speaker-info">
+                    <div class="speaker">Jane Doe</div>
+                    <div class="time">00:42</div>
+                </div>
+                <div class="text">That sounds great, Marcus. Did you encounter any challenges? If yes, please start by listing those one by one</div>
+            </div>
+        </div>
+        <div class="transcript-item">
+            <div class="speaker-image">
+                <img src="img/user1.png" alt="Person 1">
+            </div>
+            
+            <div class ="transcript-raw">
+                <div class="speaker-info">
+                    <div class="speaker">Jane Doe</div>
+                    <div class="time">00:53</div>
+                </div>
+                <div class="text">No, nothing major. All is well.
+                </div>
+            </div>
+        </div>
+        <div class="transcript-item">
+            <div class="speaker-image">
+                <img src="img/user3.png" alt="Person 3">
+            </div>
+            
+            <div class ="transcript-raw">
+                <div class="speaker-info">
+                    <div class="speaker">Jane Doe</div>
+                    <div class="time">01:21</div>
+                </div>
+                <div class="text">Good to hear. Sophia, how about you? Status report is due this week on Friday.
+                </div>
+            </div>
+        </div>
+        <div class="transcript-item">
+            <div class="speaker-image">
+                <img src="img/user2.png" alt="Person 2">
+            </div>
+            
+            <div class ="transcript-raw">
+                <div class="speaker-info">
+                    <div class="speaker">Jane Doe</div>
+                    <div class="time">01:35</div>
+                </div>
+                <div class="text">I completed the initial drafts for the new logo designs we discussed last week. I've sent them over for feedback, so I'm waiting to hear back from the stakeholders.
+                </div>
+            </div>
+        </div>
+       
+        <div class="transcript-item">
+            <div class="speaker-image">
+                <img src="img/user1.png" alt="Person 1">
+            </div>
+            
+            <div class ="transcript-raw">
+                <div class="speaker-info">
+                    <div class="speaker">Jane Doe</div>
+                    <div class="time">05:57</div>
+                </div>
+                
+                <div class="text">Great. Let's keep up the momentum and tackle today's tasks. If anyone encounters any issues, don't hesitate to reach out for support. Our collaboration is key to our success. Let's make today another productive day. Meeting adjourned.
+                </div><!-- text -->
+
+            </div><!-- transcript-raw -->
+
+        </div><!-- transcript-item -->
+
+        
+    </div> <!-- meeting-transcript -->
+    <section class="more-actions"> 
+    <div class="actions-bottom-bar">
+       
+    <button id="CommentButton" class="comment-button">
+        <img src="img/comment-icon-light.svg" alt="Comment Icon" class="icon">
+    </button>
+    </div> <!-- actions-bottom-bar -->
+
+
+    <div class="comments-block" id="commentsBlock">
+        <h3 class="comments-heading">Comments</h3>
+        <button id="CloseButton" class="close-button">Close</button>
+        <div class="comment">
+            <div class="commenter-info">
+                <div class="commenter-image">
+                    <img src="img/user1.png" alt="Commenter 1">
+                </div>
+                <div class="commenter-details">
+                    <div class="commenter-name">John Doe</div>
+                    <div class="comment-date">January 1, 2024</div>
+                    <div class="comment-time">10:00 AM</div>
+                </div>
+            </div>
+            <div class="comment-text">
+                This is the first comment.
+            </div>
+        </div>
+        <div class="comment">
+            <div class="commenter-info">
+                <div class="commenter-image">
+                    <img src="img/user2.png" alt="Commenter 2">
+                </div>
+                <div class="commenter-details">
+                    <div class="commenter-name">Jane Smith</div>
+                    <div class="comment-date">January 2, 2024</div>
+                    <div class="comment-time">2:30 PM</div>
+                </div>
+            </div>
+            <div class="comment-text">
+                This is the second comment.
+            </div>
+        </div>
+    </div> <!-- comments-block -->
+    
+
+
+</div> <!-- content-blocks -->
+</section> <!-- more-actions -->
+
+    
+
+</div> <!-- container -->
+
+    
+</main>
+<script src="js/main.js"></script>
+</body>
+</html>

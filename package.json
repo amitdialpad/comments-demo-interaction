@@ -1,0 +1,17 @@
+{
+  "name": "dp-call-summary-v2",
+  "version": "1.0.0",
+  "description": "Responsive call summary project V2",
+  "main": "index.js",
+  "homepage": "https://dialpad.github.io/DP-Call-Summary-V2/",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Amit Ayre",
+  "license": "MIT",
+  "dependencies": {
+    "gh-pages": "^6.1.1",
+    "node-sass": "^9.0.0"
+  }
+}
