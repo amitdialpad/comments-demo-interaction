@@ -71,6 +71,7 @@ if (commentButton) {
         if (commentsBlock) {
             commentsBlock.style.display = 'block';
             document.body.style.overflow = 'hidden'; // Prevent scrolling of the body content
+            
         }
     });
 }
