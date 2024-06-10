@@ -48,9 +48,15 @@ if (commentsBlock) {
         // Calculate the swipe direction
         const swipeDirection = endY - startY;
 
+        // Get the height of the browser header
+        const headerHeight = window.innerHeight - document.documentElement.clientHeight;
+
         // Swipe up
         if (swipeDirection < 0) {
-            commentsBlock.classList.add('open');
+            // Check if the comments block is already at the top of the viewport
+            if (commentsBlock.getBoundingClientRect().top > headerHeight) {
+                commentsBlock.classList.add('open');
+            }
         }
         // Swipe down
         else if (swipeDirection > 0) {
