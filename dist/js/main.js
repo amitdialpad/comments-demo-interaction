@@ -50,6 +50,10 @@ if (commentsBlock) {
 
         // Get the height of the browser header
         const headerHeight = window.innerHeight - document.documentElement.clientHeight;
+        
+        // Declare the commentsHeading variable
+        const commentsHeading = document.querySelector('.comments-heading');
+
 
         // Swipe up
         if (swipeDirection < 0) {
@@ -57,12 +61,16 @@ if (commentsBlock) {
             if (commentsBlock.getBoundingClientRect().top > headerHeight) {
                 commentsBlock.classList.add('open');
                 document.body.style.overflow = 'hidden'; // Prevent scrolling of the body content
+                commentsHeading.style.marginTop = '60px'; // Adjust the margin-top value as needed
+                closeButton.style.marginTop = '50px'; // Adjust the margin-top value as needed
             }
         }
         // Swipe down
         else if (swipeDirection > 0) {
             commentsBlock.classList.remove('open');
             document.body.style.overflow = ''; // Allow scrolling of the body content
+            commentsHeading.style.marginTop = '10px'; // Reset the margin-top value
+            closeButton.style.marginTop = '10px'; // Reset the margin-top value
         }
     });
 }
@@ -71,9 +79,7 @@ if (commentButton) {
     commentButton.addEventListener('click', () => {
         // Show the comments-block
         if (commentsBlock) {
-            commentsBlock.style.display = 'block';
-            
-            
+            commentsBlock.style.display = 'block';  
         }
     });
 }
