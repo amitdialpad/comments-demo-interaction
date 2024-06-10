@@ -23,6 +23,8 @@ if (commentButton) {
 }
 
 // Add click event listener to the closeButton
+const heading = document.querySelector('.heading'); // Declare the heading variable
+
 if (closeButton) {
     closeButton.addEventListener('click', () => {
         // Hide the comments-block
@@ -51,16 +53,23 @@ if (commentsBlock) {
         // Get the height of the browser header
         const headerHeight = window.innerHeight - document.documentElement.clientHeight;
 
+        // Declare the commentsHeading variable
+        const commentsHeading = document.querySelector('.comments-heading');
+
         // Swipe up
         if (swipeDirection < 0) {
             // Check if the comments block is already at the top of the viewport
             if (commentsBlock.getBoundingClientRect().top > headerHeight) {
                 commentsBlock.classList.add('open');
+                commentsHeading.style.marginTop = '60px'; // Adjust the margin-top value as needed
+                closeButton.style.marginTop = '50px'; // Adjust the margin-top value as needed
             }
         }
         // Swipe down
         else if (swipeDirection > 0) {
             commentsBlock.classList.remove('open');
+            commentsHeading.style.marginTop = '10px'; // Reset the margin-top value
+            closeButton.style.marginTop = '10px'; // Reset the margin-top value
         }
     });
 }
