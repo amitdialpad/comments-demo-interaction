@@ -56,11 +56,13 @@ if (commentsBlock) {
             // Check if the comments block is already at the top of the viewport
             if (commentsBlock.getBoundingClientRect().top > headerHeight) {
                 commentsBlock.classList.add('open');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling of the body content
             }
         }
         // Swipe down
         else if (swipeDirection > 0) {
             commentsBlock.classList.remove('open');
+            document.body.style.overflow = ''; // Allow scrolling of the body content
         }
     });
 }
@@ -70,7 +72,7 @@ if (commentButton) {
         // Show the comments-block
         if (commentsBlock) {
             commentsBlock.style.display = 'block';
-            document.body.style.overflow = 'hidden'; // Prevent scrolling of the body content
+            
             
         }
     });
@@ -84,6 +86,7 @@ if (closeButton) {{
             commentsBlock.style.display = 'none';
             commentsBlock.classList.remove('open'); // Reset the position of the comments block
             document.body.style.overflow = ''; // Allow scrolling of the body content
+            
         }
     });
 }
