@@ -50,7 +50,7 @@ if (commentsBlock) {
 
         // Get the height of the browser header
         const headerHeight = window.innerHeight - document.documentElement.clientHeight;
-        
+
         // Declare the commentsHeading variable
         const commentsHeading = document.querySelector('.comments-heading');
 
@@ -70,7 +70,7 @@ if (commentsBlock) {
             commentsBlock.classList.remove('open');
             document.body.style.overflow = ''; // Allow scrolling of the body content
             commentsHeading.style.marginTop = '10px'; // Reset the margin-top value
-            closeButton.style.marginTop = '10px'; // Reset the margin-top value
+            closeButton.style.marginTop = '0px'; // Reset the margin-top value
         }
     });
 }
