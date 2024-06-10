@@ -23,8 +23,6 @@ if (commentButton) {
 }
 
 // Add click event listener to the closeButton
-const heading = document.querySelector('.heading'); // Declare the heading variable
-
 if (closeButton) {
     closeButton.addEventListener('click', () => {
         // Hide the comments-block
@@ -66,5 +64,37 @@ if (commentsBlock) {
         }
     });
 }
+// Add click event listener to the CommentButton
+if (commentButton) {
+    commentButton.addEventListener('click', () => {
+        // Show the comments-block
+        if (commentsBlock) {
+            commentsBlock.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Prevent scrolling of the body content
+        }
+    });
+}
 
-
+// Add click event listener to the closeButton
+if (closeButton) {{
+    closeButton.addEventListener('click', () => {
+        // Hide the comments-block
+        if (commentsBlock) {
+            commentsBlock.style.display = 'none';
+            commentsBlock.classList.remove('open'); // Reset the position of the comments block
+            document.body.style.overflow = ''; // Allow scrolling of the body content
+        }
+    });
+}
+}
+// Add click event listener to the closeButton
+if (closeButton) {
+    closeButton.addEventListener('click', () => {
+        // Hide the comments-block
+        if (commentsBlock) {
+            commentsBlock.style.display = 'none';
+            commentsBlock.classList.remove('open'); // Reset the position of the comments block
+            document.body.style.overflow = ''; // Allow scrolling of the body content
+        }
+    });
+}
