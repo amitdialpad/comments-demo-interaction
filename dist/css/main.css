@@ -209,7 +209,7 @@
 }
 
 .comments-block.open {
-  height: 100vh;
+  height: 100%;
   min-height: 100%;
 }
 
